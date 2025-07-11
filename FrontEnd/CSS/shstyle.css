@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+.product-page {
+  padding: 60px 10%;
+}
+
+.product-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.product-image {
+  position: relative;
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #d4421b;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.review-stars {
+  color: #d4421b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.review-stars span {
+  color: #888;
+  font-size: 13px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.btn-cart {
+  background-color: #d4421b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.meta p {
+  font-size: 13px;
+  margin: 5px 0;
+  color: #444;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tab {
+  font-size: 14px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+.tab.active {
+  color: #d4421b;
+  border-bottom: 2px solid #d4421b;
+}
+
+.tab-content {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}

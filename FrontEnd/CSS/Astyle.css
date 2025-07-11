@@ -1,0 +1,356 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+     
+    
+    .about-hero {
+      background: url('https://images.unsplash.com/photo-1550547660-d9450f859349') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about-hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .about-hero h1 {
+      font-size: 48px;
+      z-index: 1;
+    }
+
+    .about-hero p {
+      font-size: 14px;
+      margin-top: 10px;
+      z-index: 1;
+    }
+     
+
+    
+    .about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+      background-color: #fff;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .about-text h5 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 10px;
+      background-color: #d84423;
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .about-text h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .about-feature {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .about-feature i {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #f44336;
+    }
+
+    .about-feature h4 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .about-feature p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .about-btn {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .about-btn:hover {
+      background-color: #f44336;
+    }
+
+    .about-image {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .about-hero h1 {
+        font-size: 36px;
+      }
+    }
+     body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+    }
+
+    .gallery-section {
+      padding: 80px 40px;
+      text-align: center;
+      background-color: #ddada0;
+    }
+
+    .gallery-section h5 {
+      color: #fff;
+      background-color: #e74c3c;
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 12px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .gallery-section h2 {
+      font-size: 28px;
+      margin: 10px 0 30px;
+      text-transform: uppercase;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(168, 133, 133, 0.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+ 
+    .hover-box {
+      background-color: #d1411e;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hover-box i {
+      color: #fff;
+      font-size: 26px;
+    }
+
+    .gallery-item.special {
+      background-color: #d1411e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gallery-item.special:hover {
+      background-color: #c0392b;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-section {
+        padding: 40px 20px;
+      }
+
+      .gallery-section h2 {
+        font-size: 22px;
+      }
+    }
+
+    .bg-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.burger {
+  top: 10%;
+  left: 5%;
+  background-image: url('burger.svg');
+}
+
+.cheese {
+  bottom: 15%;
+  right: 10%;
+  background-image: url('cheese.svg');
+}
+.category-section {
+  padding: 60px 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.top-label {
+  font-size: 12px;
+  color: white;
+  background-color: #d84315;
+  padding: 4px 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.category-section h2 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.underline span {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #d84315;
+  margin: 10px auto 30px;
+}
+
+.category-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  max-width: 300px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+   color: #6e6e6e;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6e6e6e;
+  line-height: 1.5;
+}
+
+.cta-banner {
+  background-color: #a8a3a3;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.cta-banner .text span {
+  font-size: 12px;
+  color: #e3e0e0;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cta-banner h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cta-button {
+ 
+  color: white;
+  padding: 12px 24px;
+  border: 2px  #a8a3a3;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .category-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin-top: 20px;
+  }
+}
+
